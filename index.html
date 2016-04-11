@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ramos.jpg','imagenes/alfon2.jpg','imagenes/alfon3.jpg','imagenes/tapete.png','imagenes/alfonbra.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1>SEMANA SANTA </h1> 
+    </div>
+    <div data-role="main" class="ui-content">
+      
+    <div>
+      <img src="imagenes/semana.jpg" width="100%" height="50%"> </div>
+    </div>
+    
+  
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>El significado de la semana santa</h2>
+  <p> Se muestra el significa de la semana santa</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Domingo de Pascua</h2>
+    <p>Informacion sobre el Domingo de pascua </p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Como se estable la semana santa</h2>
+     <p> Se muestra como se establece la semana santa</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Celebración de ATLIXCO</h2>
+   <p>Se muestra la celebracion en Atlixco</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>IZTAPALAPA</h2>
+   <p> Se muestra como es la celebración en Iztapalapa</p>
+    </a>
+    </li>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>VATICANO</h2>
+  <p> Se muestra como es la celebración en el Vaticano</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>JERUSALEN</h2>
+    <p> Se muestra como es la celebración en Jerusalen</p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CHIAPAS</h2>
+    <p> Se muestra como es la celebración en Chiapas</p>
+   </a>
+  </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion Dos</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>SIGNIFICADO DE LA SEMANA SANTA</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>MÁS INFORMACIÓN</h1>
+        
+        <p>La Semana Santa es el momento litúrgico más intenso de todo el año. Sin embargo, para muchos católicos se ha convertido sólo en una ocasión de descanso y diversión. Se olvidan de lo          esencial: esta semana la debemos dedicar a la oración y la reflexión en los misterios de la Pasión y Muerte de Jesús para aprovechar todas las gracias que esto nos trae.
+
+          Para vivir la Semana Santa, debemos darle a Dios el primer lugar y participar en toda la riqueza de las celebraciones propias de este tiempo litúrgico.</p>
+        <br>
+        <p>La semana santa comienza con el Domingo de Ramos</p>
+        <img src="imagenes/ramos.jpg" width="30%" height="30%"> 
+        <br>
+        <p>Se continua la celebracion con el Jueves santo</p>
+        <img src="imagenes/jueves.jpg" width="30%" height="30%"> 
+        <br>
+        <p>El viernes santo hace la procesion del viacrusis, que es la representacion de jesus camino hacia el calvario.</p>
+        <img src="imagenes/viacruz.jpg" width="30%" height="30%"> 
+        <br> 
+        <p>Continuando con la celebracion el dia sabado se hace una misa solemne en la cual se bendice el fuego nuevo y se le conoce como vigilia pascual.</p>
+        <img src="imagenes/sabado.jpg" width="30%" height="30%"> 
+        <br>
+        <p>Esta celebracion o conmemoracion se concluye con el Domingo de Resurrección</p>
+        <img src="imagenes/resurreccion.jpg" width="30%" height="30%"> 
+        <br>
+    </div>
+    </div>
+    </div>
+     <div data-role="footer" data-theme="a">
+     <h4>Karla Cañete Fortozo</h4>
+     </div>
+ </div>
+
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>DOMINGO DE PASCUA</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>VER MÁS</h1>
+        
+        <p>En la mayoría de países cristianos y sobre todo católicos, la Pascua gira en torno a la muerte y resurrección de Jesucristo . En España, durante la Semana Santa (la Semana entre el domingo de Ramos y el domingo de Resurrección), se celebran procesiones religiosas en casi todas las ciudades.</p>
+        <p>En países como Estados Unidos, la celebración de la Pascua prescinde de grandes despliegues religiosos, aunque hay quien lo celebra yendo a misa.
+
+Lo habitual en Estados Unidos es que la Pascua se convierta en una semana de vacaciones, aunque ahora el spring break (vacaciones de primavera) escolar no necesariamente coincide con la Semana Santa o Pascua. En las escuelas públicas, dependiendo del estado e incluso del condado, esa semana de vacaciones ocurrirá antes, durante o incluso después de Easter.</p>
+        <p>Es habitual que se organicen Easter egg hunts, o búsqueda de huevos de chocolate, con los niños. Esto se suele hacer el domingo de Pascua. Las familias esconden huevos de plástico rellenos con algún dulce o pequeño capricho, y los niños los encuentran. </p>
+        <br>
+        <p>La semana santa comienza con el Domingo de Ramos</p>
+        <img src="imagenes/pascua.jpg" width="40%" height="40%"> 
+        </div>
+       </div>
+       </div>
+     <div data-role="footer" data-theme="a">
+     <h4>Karla Cañete Fortozo</h4>
+ </div>
+</div> 
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+        <h1>¿CÓMO SE ESTABLECE LA SEMANA SANTA?</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>MÁS INFORMACIÓN</h1>
+        
+        <p>La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección. Durante la Semana Santa tienen lugar numerosas muestras de religiosidad popular a lo largo de todo el mundo, destacando las procesiones y las representaciones de la Pasión</p>
+        <br>
+        <p>La cuaresma comienza con el miercoles de ceniza </p>
+        <br>
+        <img src="imagenes/cuaresma.jpg" width="40%" height="40%"> 
+       </div> 
+     </div>
+     </div>
+     <div data-role="footer" data-theme="a">
+     <h4>Karla Cañete Fortozo</h4>
+     </div>
+  </div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CELEBRACIÓN EN ATLIXCO</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>VER MÁS</h1>
+        
+        <p>El Vía Crucis de Atlixco, en el estado mexicano de Puebla, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas.</p>
+        <br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/alfon.jpg',1)"><img src="imagenes/semana.jpg" width="500" height="500" id="Image6"></a> 
+        <br>
+<p>Atlixco, un municipio situado a 30 minutos de Puebla capital y que fue nombrado recientemente Pueblo Mágico, acogió hoy la llamada procesión de los Engrillados, que se celebra cada Viernes Santo en medio de gran expectación.
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/alfon2.jpg',1)"><img src="imagenes/semana.jpg" width="500" height="500" id="Image23"></a><br>
+<p>Las principales calles de este municipio situado a unos 150 kilómetros por carretera de la capital mexicana, se cubren con alfombras decorativas elaboradas con serrín de colores en un recorrido de cinco kilómetros que comienza en el Exconvento de San Francisco.
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/alfon3.jpg',1)"><img src="imagenes/semana.jpg" width="500" height="500" id="Image24"></a><br>
+<p>Con un paso lento y quejumbroso, cientos de hombres semidesnudos y encadenados caminan en busca del perdón divino a través del dolor.</p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/tapete.png',1)"><img src="imagenes/semana.jpg" width="500" height="500" id="Image25"></a><br>
+        <br> 
+        <p>La mayoría son originarios de ese municipio poblano, aunque cada año llegan más participantes de diferentes partes del país como Matamoros, Tlaxcala o Guadalajara, e incluso desde Estados Unidos, en este último caso para cumplir con su penitencia tras vivir el sueño americano.
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/alfonbra.jpg',1)"><img src="imagenes/semana.jpg" width="500" height="500" id="Image26"></a><br>
+      </div>
+           </div>
+           </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Karla Cañete Fortozo</h4>
+   </div>
+  </div>
+
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>IZTAPALAPA</h1>
+    </div>
+    <div data-role="content" align="center">
+     
+    <p>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.
+     </p>
+     <br>
+     <img src="imagenes/izta.jpg" width="40%" height="40%"> 
+     <p>
+     Los misioneros utilizaron el teatro para catequizar a los antiguos mexicanos y desterrar así las prácticas religiosas anteriores. Las escenificaciones de la Pasión, conmovían profundamente a los espectadores; así, el teatro de los evangelizadores actuó en favor de la cristianización. Del pasado llegan las voces que amalgaman en el presente una forma particular de sincretismo, dondelas viejas costumbres, los componentes internos y externos del drama, se llenan de nuevos contenidos sin desalojar completamente a las anteriores.</p>
+     <br>
+     <img src="imagenes/izta1.jpg" width="40%" height="40%"> 
+    <p>
+     Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia. La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza. </p> 
+     <br>
+     <img src="imagenes/izta2.jpg" width="40%" height="40%">
+     </div>
+ 
+    <div data-role="footer" data-theme="a">
+     <h4>Karla Cañete Fortozo</h4>
+   </div>
+   </div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>VATICANO</h1>
+   </div>
+   <div data-role="content" align="center">
+  
+    <p>
+    ¿Cómo celebran los católicos la Semana Santa?¿Qué se hace en el Vaticano?
+
+Hay cuatro ceremonias importantes durante la Semana Santa
+
+1. El domingo de Ramos recuerda la llegada de Jesús a Jerusalén. Los católicos ese día organizan procesiones con ramas de olivo y palmas bendecidas. En Roma, esta ceremonia está presidida por el Papa Francisco y tiene lugar en la Plaza de San Pedro
+     </p>
+     <br>
+     <img src="imagenes/vaticano.jpg" width="40%" height="40%"> 
+     <p>
+     2. El Jueves Santo se conmemora la traición de Judas y la Última Cena, donde Jesús instituyó la Eucaristía. Por la mañana, el Papa Francisco celebra la Misa Crismal en la Basílica de San Juan de Letrán, catedral de Roma.
+     </p>
+     <br>
+     <img src="imagenes/vaticano1.jpg" width="40%" height="40%"> 
+    <p>
+    3. El Viernes Santo es el día más triste del año para los católicos. Rememora la agonía y el sufrimiento del prendimiento, el juicio y la muerte de Jesús. Ese día no hay Misa. Jesús ha muerto. En el Vaticano se celebra los oficios en la Basílica de San Pedro.
+      </p>
+      <br> 
+     <img src="imagenes/vaticano2.jpg" width="40%" height="40%"> 
+    <p>
+    4. Al anochecer del sábado Santo tiene lugar la principal celebración cristiana del año: la Vigilia Pascual. Se conmemora la Resurrección de Jesús. En esta ocasión también el Papa celebra misa en el interior de la Basílica de San Pedro.</p>
+     </div>
+ 
+  <div data-role="footer" data-theme="a">
+      <h4>Karla Cañete Fortozo</h4>
+   </div>
+  </div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>JERUSALEN</h1>
+   </div>
+   <div data-role="content" align="center">
+   <p>
+El periodo de la Cuaresma está llegando a su fin y tanto los cristianos locales como los miles de peregrinos que han acudido a la Ciudad Santa se están preparando para celebrar Semana Santa y su culminación en el Domingo de Resurrección, la fecha de mayor importancia del año litúrgico cristiano.
+     </p>
+     <br>
+     <img src="imagenes/jerusalen.jpg" width="40%" height="40%"> 
+     <p>
+     No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.
+     </p>
+     <br>
+     <img src="imagenes/jerusalen1.jpg" width="40%" height="40%"> 
+    <p>
+    Jerusalén se convierte en la Semana Santa en el epicentro del mundo cristiano y acoge a miles de devotos que buscan vivir una experiencia única siguiendo los pasos de Cristo, pero también es una ciudad con otros atractivos turísticos para el peregrino que busca algo más que los lugares santos.
+      </p>
+      <br> 
+     <img src="imagenes/jerusalen2.jpg" width="40%" height="40%"> 
+     </div>
+    
+  <div data-role="footer" data-theme="a">
+      <h4>Karla Cañete Fortozo</h4>
+   </div>
+  </div>
+
+ 
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CHIAPAS</h1>
+   </div>
+   <div data-role="content" align="center">
+      <p>
+El sincretismo religioso de los zoques de Tuxtla, se hace presente en la celebración de una de los principales festejos de la priostería del Cerrito, como es la Semana Santa. Esta celebración corre a cargo de los priostes durante tres años, quienes tienen a resguardo la imagen de Jesús de Nazaret. Aunque el novenario de rezos comienza una semana antes en casa de los priostes.
+     </p>
+     <br>
+     <img src="imagenes/chiapas.jpg" width="40%" height="40%"> 
+     <p>
+     Dentro de los rituales anuales a cargo de la Junta de Festejos del Cerrito se encuentra la Semana Mayor o Semana Santa, hablar de ello es como siempre cósmico e irrepetible, algunos días hay tanto que hacer, son muchas actividades llevadas a cabo en un mismo día en diferentes lugares, así como en los días de procesión y redención, y por último de fiesta por la resurrección del Señor.
+     </p>
+     <br>
+     <img src="imagenes/chiapas1.jpg" width="40%" height="40%">
+    <p>
+    Parte de los preparativos para el inicio de las actividades religiosas y rituales es hacer la ensarta de flor de mayo (Plumeria rubra), en la cual participan muchos de los ayegados a la celebración, mismos que se sientan junto a canastas llenas de flor de mayo y comienzan a ensartar la flor, con la finalidad de adornar con ella el altar, la camilla donde llevan al Señor de Nazareth, la Virgen de los Dolores, para los padrinos, y los cargueros, así como demás personas importantes de la celebración.
+      </p>
+      <br> 
+     <img src="imagenes/chiapas2.jpg" width="40%" height="40%"> 
+     </div>
+       <div data-role="footer" data-theme="a">
+      <h4>Karla Cañete Fortozo</h4>
+   </div>
+  </div>
+ 
+         
+</body>
+</html>
